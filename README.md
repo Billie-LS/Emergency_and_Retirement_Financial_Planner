@@ -5,15 +5,19 @@
 
 
 
-The purpose of this project is to simulate loca community fintech consulting operations. The scenario is based on the premise on contract fullfillment for a large credit union whereby the firm must service the members. This contract entails building a tool to facilitate credit union members self-evaluation of financial health. In so doing, two specific areas are to be examined an/or addressed. First, enable monthly budget assessment.  Second, enable reasonable retirement planning forecast based on individual current holdings of cryptocurrencies, stocks, and bonds. 
+The purpose of this assignment is to simulate local community fintech consulting operations. The scenario is based on the premise of contract fullfillment for a large credit union whereby the firm must service the members. This contract entails creation of two financial analysis tools by using a single Jupyter notebook:
 
-This product represents an initial and simple prototype.  It allows systematic evaluation of current asset holdings (crypto-currencies, stock Funds, and bond funds) to determine present value as well as projected furure value.  In addition, it assesses current asset holdings value in relation to projected emergency needs.
+Part 1: A financial planner for emergencies. The members will be able to use this tool to visualize their current savings. The members can then determine if they have enough reserves for an emergency fund.
+
+Part 2: A financial planner for retirement. This tool will forecast the performance of their retirement portfolio in 30 years. To do this, the tool will make an Alpaca API call via the Alpaca SDK to get historical price data for use in Monte Carlo simulations.  Hopefully, enabling reasonable retirement planning forecast based on individual current holdings of cryptocurrencies, stocks, and bonds
+
+This product represents an initial and simplified prototype.  It allows systematic evaluation of current asset holdings (crypto-currencies, stock Funds, and bond funds) to determine present value as well as projected future value.  In addition, it assesses current asset holdings value in relation to projected emergency needs.
 
 Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
 
 ---
 
-## Note: the market is dynamic.  The dates chosen for this analysis are dynamic.  As such, all figures provided wil differ from values returned on any specific day in which this code is operated.  That is to say, figures and values presented herein will be outdated compared to values obtained by user realtime.  All results should be viewed as accurate estimates in relation to the date they are calculated.
+## Note: the market is dynamic.  The dates chosen for this analysis are dynamic.  As such, all figures provided will differ from values returned on any specific day in which this code is operated.  That is to say, figures and values presented herein will be outdated compared to values obtained by user realtime.  All results should be viewed as accurate estimates in relation to the date they are calculated.
 
 ---
 ## **Methods**
