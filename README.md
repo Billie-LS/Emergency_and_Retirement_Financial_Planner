@@ -5,49 +5,103 @@
 
 
 
+The purpose of this project is to simulate loca community fintech consulting operations. The scenario is based on the premise on contract fullfillment for a large credit union whereby the firm must service the members. This contract entails building a tool to facilitate credit union members self-evaluation of financial health. In so doing, two specific areas are to be examined an/or addressed. First, enable monthly budget assessment.  Second, enable reasonable retirement planning forecast based on individual current holdings of cryptocurrencies, stocks, and bonds. 
 
-The purpose of this project was to assume the role of a quantitative analyst for a FinTech investing platform. The task at hand is to offer clients a one-stop online investment solution for their retirement portfolios that’s both inexpensive and high quality.
+This product represents an initial and simple prototype.  It allows systematic evaluation of current asset holdings (crypto-currencies, stock Funds, and bond funds) to determine present value as well as projected furure value.  In addition, it assesses current asset holdings value in relation to projected emergency needs.
 
-The goal is to systematically evaluate four new investment options (funds) for possible inclusion in the client portfolios. In so doing, determine the fund with the most investment potential based on key risk-management metrics: the daily returns, standard deviations, Sharpe ratios, and betas.
+Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
 
-Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained and demonstrate further visualization with combined data plots, overlay plots, and heatmap visualization.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
+---
+
+## Note: the market is dynamic.  The dates chosen for this analysis are dynamic.  As such, all figures provided wil differ from values returned on any specific day in which this code is operated.  That is to say, figures and values presented herein will be outdated compared to values obtained by user realtime.  All results should be viewed as accurate estimates in relation to the date they are calculated.
 
 ---
 ## **Methods**
+### The code script analysis performed:
 
-The code script analysis performed:
+   The code utilizes API calls to obtain past and present data on asset trade parameters
+   Free Crypto API Call - for Bitcoin (BTC) and Etherium (ETH) data
+   Alpaca Markets, AlpacaAPI using Alpaca SDK - for SPDR S&P 500 ETF Trust (SPY) and iShares Core US Aggregate Bond ETF (AGG)
+    
+#### Step I - Financial planner for emergencies; use this tool to visualize current savings.
+#### Emergency Financial Planner = present value vs potential emergency needs, i.e. 'emergency fund'
+
+   Given current holdings of Bitcoin and Etherium, 
+       obtain current pricing per unit/coin
+       calculate total combined value of holdings = combined total cryptocurrency value
+       
+   Given current holdings of SPDR S&P 500 ETF Trust (SPY) and iShares Core US Aggregate Bond ETF (AGG),
+       obtain current pricing per unit/share
+       calculate total combined value of holdings = combined total stocks and bonds value 
+
+   Given combined total cryptocurrency value and combined total stocks and bonds value,
+       calculate total savings value = total cryptocurrency value + total stocks and bonds value
+
+   Given average current monthly income of credit union member,
+       extrapolate emergency fund requirement = 3 x monthly income
+
+   Given:
+       combined total stocks and bonds value
+       emergency fund requirement
+           compare two amounts and determine if,
+           a. savings value exceed emergency fund requirement
+           b. savings value equals emergency fund requirement
+           c. emergency fund requirement exceeds savings value
+
+![holdings_pie](Images/holdings_pie.png)
+
+#### Step II - Financial planner for retirement; forecast retirement portfolio's 30 year performance.
+#### use Monte Carlo simulation to analyze past performance of stocks and bonds and simulate future performance to calculate potential future savings/holdings
+
+   30 Year Traditional Planning
+   Given current holdings of SPDR S&P 500 ETF Trust (SPY) and iShares Core US Aggregate Bond ETF (AGG),
+       Make an API call via the Alpaca SDK to get 3 years of historical closing prices
+       use MCForecastTools library to create a Monte Carlo simulation for traditional 60% stocks (SPY) and 40% bonds (AGG) split
+       Run Monte Carlo simulation of 500 samples and 30 years for the 60/40 portfolio
+       visualize- overlay line plot resulting from a simulation
+       visualize- plot probability distribution of the Monte Carlo simulation
+
+![3yr_scatter](Images/3yr_scatter_hx.png)
+
+![MC_3data_30predict](Images/3_30_MC.png)
+
+![current_30](Images/current_val_sb_30.png)
 
 
+   10 Year Growth/'Aggressive' Planning
+   Given current holdings of SPDR S&P 500 ETF Trust (SPY) and iShares Core US Aggregate Bond ETF (AGG),
+       Make an API call via the Alpaca SDK to get 3 years of historical closing prices
+       use MCForecastTools library to create a Monte Carlo simulation for growth 80% stocks (SPY) and 20% bonds (AGG) split
+       Run Monte Carlo simulation of 500 samples and 30 years for the 80/20 portfolio
+       visualize- overlay line plot resulting from a simulation
+       visualize- plot probability distribution of the Monte Carlo simulation
 
 
+![MC_3data_30predict](Images/3_10_MC.png)
 
+![current_30](Images/current_val_sb_10.png)
 
 
 
             
-   SUPPLEMENTAL ANALYSIS was then introduced by the author.
+   SUPPLEMENTAL and/or EXPANED ANALYSIS was introduced by the author -
+   The historical data was cleaned and analyzed in order to 
+       visualize with `plot.scatter` and parameters- x='timestamp', y='close', c='volume' ,
+       utilize `pct_change` function in order to calculate daily returns.
    The `corr` function was used to calculate correlations for each fund pair.
    The `heatmap` function from the Seaborn library was used to create a heatmap of correlation values visualization.
+   Monte Carlo simulations were also conducted utilizing 5 years of historical closing prices
+       Run Monte Carlo simulation of 500 samples and 5 years prediction for the 40/60 portfolio
+       visualize- overlay line plot resulting from a simulation
+       visualize- plot probability distribution of the Monte Carlo simulation
+   Monte Carlo simulations were also conducted utilizing 7 years of historical closing prices
+       Run Monte Carlo simulation of 500 samples and 1 year prediction for the 40/60 portfolio
+       visualize- overlay line plot resulting from a simulation
+       visualize- plot probability distribution of the Monte Carlo simulation
    
 ![all_dataframes_htmap](Images/htmaps.png)    
    
-   
-   
    Additional information about the heatmap method from seaborn on the [documentation page](https://seaborn.pydata.org/generated/seaborn.heatmap.html#seaborn.heatmap).
-
-
-
-
-
-
-# Emergency_and_Retirement_Financial_Planner
-Financial planner for emergencies; use this tool to visualize current savings.  Financial planner for retirement; forecast retirement portfolio's 30 year performance.
-
-
-
-
-
-
 
 
 
@@ -60,13 +114,13 @@ This project leverages Jupyter Lab v3.4.4 and python v3.7 with the following pac
 
 * [os](https://docs.python.org/3/library/os.html) - provides a portable way of using operating system dependent functionality.
 
-* [getenv](https://docs.python.org/3/library/os.html?highlight=os%20getenv#os.getenv) - From os, return the value of the environment variable key if it exists, or default if it doesn’t.
+* [getenv](https://docs.python.org/3/library/os.html?highlight=os%20getenv#os.getenv) - From 'os', return the value of the environment variable key if it exists, or default if it doesn’t.
 
 * [requests](https://requests.readthedocs.io/en/latest/) - an elegant and simple HTTP library for Python, allows you to send HTTP/1.1 requests extremely easily.
 
 * [json](https://docs.python.org/3/library/json.html?highlight=json) - JavaScript Object Notation, is a lightweight data interchange format inspired by JavaScript object literal syntax 
 
-* [pandas](https://pandas.pydata.org/docs/) - Software library written for the Python programming language for data manipulation and analysis.
+* [pandas](https://pandas.pydata.org/docs/) - Software library written for the python programming language for data manipulation and analysis.
 
 * [Timestamp](https://pandas.pydata.org/docs/reference/api/pandas.Timestamp.html) - From 'pandas', equivalent of python’s Datetime, used for the entries that make up a DatetimeIndex, and other timeseries oriented data structures in pandas.
 
@@ -76,13 +130,13 @@ This project leverages Jupyter Lab v3.4.4 and python v3.7 with the following pac
 
 * [numpy](https://numpy.org/doc/stable/) - Software library, NumPy is the fundamental package for scientific computing in Python, provides vast functionality.
 
-* [timedelta](https://numpy.org/doc/stable/reference/arrays.datetime.html) - From NumPy, from datetime, allows the subtraction of two datetime values, an operation which produces a number with a time unit.
+* [timedelta](https://numpy.org/doc/stable/reference/arrays.datetime.html) - From 'NumPy', from datetime, allows the subtraction of two datetime values, an operation which produces a number with a time unit.
 
 * [dot_env](https://pypi.org/project/python-dotenv/) - Python-dotenv reads key-value pairs from a .env file and can set them as environment variables.
 
 * [alpaca-trade-api](https://pypi.org/project/alpaca-trade-api/0.29/) - a python library for the Alpaca trade API. It allows rapid trading algo development easily, with support for the both REST and streaming interfaces.
 
-* [MCForecastTools]- A Python classroom provided application/script for runnning Monte Carlo simulation on portfolio price data
+* [MCForecastTools]- a python library for the Monte Carlo simulation framework, exists as a file named MCForecastTools.py, in the same folder as the challenge notebook. This file contains all the logic, in the form of Python code, required to run the Monte Carlo simulation on portfolio price data.
 
 For additional and / or supplemental processing and visulaization this project also makes use of the following packages:
 
@@ -127,6 +181,9 @@ git clone git@github.com:Billie-LS/Emergency_and_Retirement_Financial_Planner.gi
 
 ---
 ## **Usage**
+
+**Known Issues**
+This script utlizes a `timedelta` operation to base calculations on most recent 'yesterday' date.  Therefore, running this tool on Sunday or Monday will produce an error as there will be no market data for Saturdays or Sundays. 
 
 From terminal, the installed application is run through jupyter lab web-based interactive development environment (IDE) interface by typing at prompt:
 
