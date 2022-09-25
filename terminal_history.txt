@@ -1,0 +1,122 @@
+ 3914  git clone git@github.com:Billie-LS/Emergency_and_Retirement_Financial_Planner.git
+ 3915  git status
+ 3916  git add .
+ 3917  git add *
+ 3918  git commit -m 'challenge 5 begin, starter code'
+ 3919  git push
+ 3920  git status
+ 3921  conda activate trade_jupyterlab_dev 
+ 3922  jupyter lab
+ 3923  git status
+ 3924  git add .
+ 3925  git add *
+ 3926  git commit -m 'initializing'
+ 3927  git push
+ 3928  git status
+ 3929  git add .
+ 3930  git add *
+ 3931  git commit -m 'starter code reserve'
+ 3932  git push
+ 3933  conda activate trade_jupyterlab_dev 
+ 3934  jupyter lab
+ 3935  conda activate trade_jupyterlab_dev 
+ 3936  jupyter lab
+ 3937  conda activate trade_jupyterlab_dev 
+ 3938  jupyter lab
+ 3939  conda deactivate
+ 3940  conda activate trade_jupyterlab_dev 
+ 3941  jupyter lab
+ 3942  conda deactivate
+ 3943  conda activate trade_jupyterlab_dev 
+ 3944  jupyter lab
+ 3945  conda activate trade_jupyterlab_dev 
+ 3946  jupyter lab
+ 3947  conda deactivate
+ 3948  git add .
+ 3949  git add *
+ 3950  git commit -m 'api'
+ 3951  git push
+ 3952  conda activate trade_jupyterlab_dev 
+ 3953  jupyter lab
+ 3954  conda activate trade_jupyterlab_dev 
+ 3955  jupyter lab
+ 3956  code .
+ 3957  conda activate trade_jupyterlab_dev 
+ 3958  code .
+ 3959  conda deactivate
+ 3960  conda activate trade_jupyterlab_dev 
+ 3961  jupyter lab
+ 3962  code .
+ 3963  git add .
+ 3964  git add *
+ 3965  git commit -m 'api'
+ 3966  git push
+ 3967  git status
+ 3968  git add .
+ 3969  git add *
+ 3970  git commit -m 'api'
+ 3971  git push
+ 3972  git pull
+ 3973  git push
+ 3974  git status
+ 3975  conda activate trade_jupyterlab_dev 
+ 3976  conda deactivate
+ 3977  conda activate trade_jupyterlab_dev 
+ 3978  jupyter lab
+ 3979  code .
+ 3980  git status
+ 3981  git add .
+ 3982  git add *
+ 3983  git commit -m 'gitignore update'
+ 3984  git push
+ 3985  conda deactivate
+ 3986  conda activate trade_jupyterlab_dev 
+ 3987  jupyter lab
+ 3988  conda activate trade_jupyterlab_dev 
+ 3989  jupyter lab
+ 3990  conda deactivate
+ 3991  conda activate trade_jupyterlab_dev 
+ 3992  jupyter lab
+ 3993  conda activate trade_jupyterlab_dev 
+ 3994  jupyter lab
+ 3995  conda activate trade_jupyterlab_dev 
+ 3996  jupyter lab
+ 3997  conda deactivate
+ 3998  git status
+ 3999  git add .
+ 4000  git add *
+ 4001  git commit -m 'initial orking version, ReadMe update'
+ 4002  git push
+ 4003  conda deactivate
+ 4004  conda activate trade_jupyterlab_dev 
+ 4005  jupyter lab
+ 4006  conda activate trade_jupyterlab_dev 
+ 4007  jupyter lab
+ 4008  git status
+ 4009  conda deactivate
+ 4010  git status
+ 4011  git add .
+ 4012  git add *
+ 4013  git commit -m 'working version, code and ReadMe update'
+ 4014  git push
+ 4015  conda deactivate
+ 4016  conda activate trade_jupyterlab_dev 
+ 4017  jupyter lab
+ 4018  conda activate trade_jupyterlab_dev 
+ 4019  jupyter lab
+ 4020  git status
+ 4021  git add .
+ 4022  git add *
+ 4023  git commit -m 'v1.1 working version, code update, images update, and ReadMe update'
+ 4024  git push
+ 4025  conda deactivate
+ 4026  conda activate trade_jupyterlab_dev 
+ 4027  jupyter lab
+ 4028  git status
+ 4029  git add .
+ 4030  git add *
+ 4031  git commit -m 'v1.2 working version, code update, images update, and ReadMe update'
+ 4032  git push
+ 4033  conda deactivate
+ 4034  conda activate trade_jupyterlab_dev 
+ 4035  jupyter lab
