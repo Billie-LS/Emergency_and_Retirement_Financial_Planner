@@ -2,13 +2,15 @@
 # **August 2022 Cohort**
 ## *Module 5, Challenge - Financial Planning with APIs and Monte Carlo Simulations*
 
-The objective of this assignment is to simulate local community fintech consulting operations. The scenario is based on the premise of contract fullfillment for a large credit union whereby the firm must service the members. This contract entails creation of two financial analysis tools by using a single Jupyter notebook:
+Objective - to simulate local community fintech consulting operations. 
+Scenario - contract fullfillment for a large credit union (client/customer) whereby the firm must service the members (users). 
+Product - contract entails creation of two financial analysis tools contained within a single Jupyter notebook.
 
 Part 1: A financial planner for emergencies. The members will be able to use this tool to visualize their current savings. The members can then determine if they have enough reserves for an emergency fund.
 
 Part 2: A financial planner for retirement. This tool will forecast the performance of their retirement portfolio in 30 years. To do this, the tool will make an Alpaca API call via the Alpaca SDK to get historical price data for use in Monte Carlo simulations.  Hopefully, enabling reasonable retirement planning forecast based on individual current holdings of cryptocurrencies, stocks, and bonds
 
-This product represents an initial and simplified prototype.  It allows systematic evaluation of current asset holdings (crypto-currencies, stock Funds, and bond funds) to determine present value as well as projected future value.  In addition, it assesses current asset holdings value in relation to projected emergency needs.
+This product represents a simplified prototype.  It allows systematic evaluation of current asset holdings (crypto-currencies, stock Funds, and bond funds) to determine present value as well as projected future value.  In addition, it assesses current asset holdings value in relation to projected emergency needs.
 
 Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
 
@@ -73,7 +75,7 @@ Beyond the scope of the assignment, the author sought to conduct additional anal
    Given current holdings of SPDR S&P 500 ETF Trust (SPY) and iShares Core US Aggregate Bond ETF (AGG),
        Make an API call via the Alpaca SDK to get 3 years of historical closing prices
        use MCForecastTools library to create a Monte Carlo simulation for growth 80% stocks (SPY) and 20% bonds (AGG) split
-       Run Monte Carlo simulation of 500 samples and 30 years for the 80/20 portfolio
+       Run Monte Carlo simulation of 500 samples and 10 years for the 80/20 portfolio
        visualize- overlay line plot resulting from a simulation
        visualize- plot probability distribution of the Monte Carlo simulation
 
