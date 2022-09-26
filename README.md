@@ -1,11 +1,8 @@
 # **Columbia University Engineering, New York FinTech BootCamp** 
 # **August 2022 Cohort**
-## *Module 5, Challenge - Portfolio key risk management metrics & analysis*
-### example analysis of key metrics: daily returns, standard deviations, Sharpe ratios, and betas
+## *Module 5, Challenge - Financial Planning with APIs and Monte Carlo Simulations*
 
-
-
-The purpose of this assignment is to simulate local community fintech consulting operations. The scenario is based on the premise of contract fullfillment for a large credit union whereby the firm must service the members. This contract entails creation of two financial analysis tools by using a single Jupyter notebook:
+The objective of this assignment is to simulate local community fintech consulting operations. The scenario is based on the premise of contract fullfillment for a large credit union whereby the firm must service the members. This contract entails creation of two financial analysis tools by using a single Jupyter notebook:
 
 Part 1: A financial planner for emergencies. The members will be able to use this tool to visualize their current savings. The members can then determine if they have enough reserves for an emergency fund.
 
