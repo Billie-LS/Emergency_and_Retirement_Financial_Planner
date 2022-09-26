@@ -12,7 +12,17 @@ Part 2: A financial planner for retirement. This tool will forecast the performa
 
 This product represents a simplified prototype.  It allows systematic evaluation of current asset holdings (crypto-currencies, stock Funds, and bond funds) to determine present value as well as projected future value.  In addition, it assesses current asset holdings value in relation to projected emergency needs.
 
-Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
+---
+
+Supplemental processing and analysis:
+
+Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained
+
+a) While the portfolio presnted incorporates the two most idely accepted and recognised cryptocurrencies, it is possible for a portfolio to have dozens if not hundreds of different cryptocurrency holdings.  Cryptocurrency continues with fraudulent an/or invalid 'coins' in circulation.  As a simple concept application, script was incorprated for exception handling.
+
+b) to expand analysis and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
+
+c) to improve granularity the MCForecastTool.py code line 154 was altered changing parameter bin = 10 to bin = 45 
 
 ---
 
