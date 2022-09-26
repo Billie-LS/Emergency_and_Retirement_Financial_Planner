@@ -1,6 +1,8 @@
 # Import libraries and dependencies
 import numpy as np
 import pandas as pd
+from pandas import DataFrame as wdf
+
 import os
 import alpaca_trade_api as tradeapi
 import datetime as dt
@@ -46,7 +48,7 @@ class MCSimulation:
         """
         
         # Check to make sure that all attributes are set
-        if not isinstance(portfolio_data, pd.DataFrame):
+        if not isinstance(portfolio_data, wdf):                                    # shorthand wdf = pd.DataFrame
             raise TypeError("portfolio_data must be a Pandas DataFrame")
             
         # Set weights if empty, otherwise make sure sum of weights equals one.
@@ -87,7 +89,7 @@ class MCSimulation:
         std_returns = daily_returns.std().tolist()
         
         # Initialize empty Dataframe to hold simulated prices
-        portfolio_cumulative_returns = pd.DataFrame()
+        portfolio_cumulative_returns = wdf()                                      # shorthand wdf = pd.DataFrame
         
         # Run the simulation of projecting stock prices 'nSim' number of times
         for n in range(self.nSim):
@@ -108,7 +110,7 @@ class MCSimulation:
                     simvals[s].append(simvals[s][-1] * (1 + np.random.normal(mean_returns[s], std_returns[s])))
     
             # Calculate the daily returns of simulated prices
-            sim_df = pd.DataFrame(simvals).T.pct_change()
+            sim_df = wdf(simvals).T.pct_change()                                  # shorthand wdf = pd.DataFrame
     
             # Use the `dot` function with the weights to multiply weights with each column's simulated daily returns
             sim_df = sim_df.dot(self.weights)
@@ -131,7 +133,7 @@ class MCSimulation:
         """ 
         
         # Check to make sure that simulation has run previously. 
-        if not isinstance(self.simulated_return,pd.DataFrame):
+        if not isinstance(self.simulated_return,wdf):                          # shorthand wdf = pd.DataFrame
             self.calc_cumulative_return()
             
         # Use Pandas plot function to plot the return data
@@ -145,7 +147,7 @@ class MCSimulation:
         """
         
         # Check to make sure that simulation has run previously. 
-        if not isinstance(self.simulated_return,pd.DataFrame):
+        if not isinstance(self.simulated_return,wdf):                         # shorthand wdf = pd.DataFrame
             self.calc_cumulative_return()
         
         # Use the `plot` function to create a probability distribution histogram of simulated ending prices
@@ -163,7 +165,7 @@ class MCSimulation:
         """
         
         # Check to make sure that simulation has run previously. 
-        if not isinstance(self.simulated_return,pd.DataFrame):
+        if not isinstance(self.simulated_return,wdf):                         # shorthand wdf = pd.DataFrame
             self.calc_cumulative_return()
             
         metrics = self.simulated_return.iloc[-1].describe()

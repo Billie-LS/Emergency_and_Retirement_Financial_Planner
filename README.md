@@ -22,7 +22,7 @@ a) While the portfolio presnted incorporates the two most idely accepted and rec
 
 b) to expand analysis and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
 
-c) to improve granularity the MCForecastTool.py code line 154 was altered changing parameter bin = 10 to bin = 45 
+c) to improve granularity the MCForecastTool.py code line 154 was altered changing parameter bin = 10 to bin = 45.  from minor style point, a shorthand was also introduced. 
 
 ---
 
