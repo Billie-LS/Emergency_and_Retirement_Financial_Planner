@@ -87,7 +87,7 @@ Beyond the scope of the assignment, the author sought to conduct additional anal
 
 
             
-   SUPPLEMENTAL and/or EXPANED ANALYSIS was introduced by the author -
+   SUPPLEMENTAL and/or EXPANDED ANALYSIS was introduced by the author -
    The historical data was cleaned and analyzed in order to 
        visualize with `plot.scatter` and parameters- x='timestamp', y='close', c='volume' ,
        utilize `pct_change` function in order to calculate daily returns.
@@ -223,14 +223,17 @@ Loki 'billie' Skylizard
 ### **BootCamp lead instructor**
 
 Vinicio De Sola
+    [LinkedIn](https://www.linkedin.com/in/vinicio-desola-jr86/)
     [@GitHub](https://github.com/penpen86)
 
 
 ### **BootCamp teaching assistants**
 
 Corey Recai
+    [LinkedIn](https://www.linkedin.com/in/corey-recai/)
 
 Santiago Pedemonte
+    [LinkedIn](https://www.linkedin.com/in/s-pedemonte/)
     [@GitHub](https://github.com/Santiago-Pedemonte)
 
 
