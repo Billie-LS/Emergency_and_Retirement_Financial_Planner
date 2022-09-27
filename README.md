@@ -18,7 +18,7 @@ Supplemental processing and analysis:
 
 Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
 
-a) While the portfolio presnted incorporates the two most widely accepted and recognised cryptocurrencies, it is possible for a portfolio to have dozens, if not hundreds of different cryptocurrency holdings.  Cryptocurrency continues with fraudulent an/or invalid 'coins' in circulation.  As a simple concept application, script was incorprated for exception handling. A simulated 'fraudulent' or invalid cryptocurrency, `Zambookie` was introduced as negative control.  This section of code is added as supplement at end of part 1 in the beginning.
+a) While the portfolio presented incorporates the two most widely accepted and recognised cryptocurrencies, it is possible for a portfolio to have dozens, if not hundreds of different cryptocurrency holdings.  Cryptocurrency continues with fraudulent an/or invalid 'coins' in circulation.  As a simple concept application, script was incorprated for exception handling. A simulated 'fraudulent' or invalid cryptocurrency, `Zambookie` was introduced as negative control.  This section of code is added as supplement at end of part 1 in the beginning.
 
 b) to expand analysis and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  
 
