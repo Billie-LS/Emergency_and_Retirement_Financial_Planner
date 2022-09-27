@@ -16,11 +16,11 @@ This product represents a simplified prototype.  It allows systematic evaluation
 
 Supplemental processing and analysis:
 
-Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained
+Beyond the scope of the assignment, the author sought to conduct additional analysis of the data obtained.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
 
-a) While the portfolio presnted incorporates the two most idely accepted and recognised cryptocurrencies, it is possible for a portfolio to have dozens if not hundreds of different cryptocurrency holdings.  Cryptocurrency continues with fraudulent an/or invalid 'coins' in circulation.  As a simple concept application, script was incorprated for exception handling.
+a) While the portfolio presnted incorporates the two most widely accepted and recognised cryptocurrencies, it is possible for a portfolio to have dozens, if not hundreds of different cryptocurrency holdings.  Cryptocurrency continues with fraudulent an/or invalid 'coins' in circulation.  As a simple concept application, script was incorprated for exception handling. A simulated 'fraudulent' or invalid cryptocurrency, `Zambookie` was introduced as negative control.
 
-b) to expand analysis and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  Supplemental and/or extra analysis beyond the scope of the project is noted as 'supplemental' were approrpiate. 
+b) to expand analysis and demonstrate further visualization with Monte Carlo simulation adjustments for increasd historical data as compared to extent of future predictions, scatter plots, and heatmap visualization.  
 
 c) to improve granularity the MCForecastTool.py code line 154 was altered changing parameter bin = 10 to bin = 45.  from minor style point, a shorthand was also introduced. 
 
@@ -254,6 +254,11 @@ Vijaya Reddy
 
 Mounika Mamindla
     [LinkedIn](https://www.linkedin.com/in/mounika-mamindla/)
+
+Mohamed Metwalli
+    [LinkedIn](https://www.linkedin.com/in/mmetwalli/)
+    [@GitHub](https://github.com/mmetwalli96)
+
 
 
 ### **GitHub inspiration - dynamic and/or current date formatting ideas**
