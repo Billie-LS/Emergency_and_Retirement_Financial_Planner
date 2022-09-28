@@ -196,7 +196,7 @@ git clone git@github.com:Billie-LS/Emergency_and_Retirement_Financial_Planner.gi
 ## **Usage**
 
 **Known Issues**
-This script utlizes a `timedelta` operation to base calculations on most recent 'yesterday' date.  Therefore, running this tool on Sunday or Monday will produce an error as there will be no market data for Saturdays or Sundays. 
+This script utlizes a `timedelta` operation to base calculations on most recent 'yesterday' date.  Therefore, running this tool on Sunday or Monday will produce an error as there will be no market data for Saturdays or Sundays.  For the purpose of pending review, `yesterday = today - timedelta(days = 2)`
 
 From terminal, the installed application is run through jupyter lab web-based interactive development environment (IDE) interface by typing at prompt:
 
