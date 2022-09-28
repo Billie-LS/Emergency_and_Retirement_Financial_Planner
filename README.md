@@ -237,10 +237,7 @@ Vinicio De Sola
     [@GitHub](https://github.com/penpen86)
 
 
-### **BootCamp teaching assistants**
-
-Corey Recai
-    [LinkedIn](https://www.linkedin.com/in/corey-recai/)
+### **BootCamp teaching assistant**
 
 Santiago Pedemonte
     [LinkedIn](https://www.linkedin.com/in/s-pedemonte/)
